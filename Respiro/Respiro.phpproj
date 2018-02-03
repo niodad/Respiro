@@ -1,0 +1,31 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Respiro</Name>
+    <ProjectGuid>1242cc71-b08a-4421-9c54-f0f16c5c432d</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>Respiro</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="404.php" />
+    <Compile Include="footer.php" />
+    <Compile Include="functions.php" />
+    <Compile Include="header.php" />
+    <Compile Include="index.php" />
+    <Compile Include="respiroFunctions.php" />
+    <Compile Include="single.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="screenshot.jpg" />
+    <Content Include="style.css" />
+  </ItemGroup>
+</Project>

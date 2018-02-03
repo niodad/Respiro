@@ -1,0 +1,1872 @@
+/*
+
+Theme Name: Divi Child By Monterey Premier
+
+Theme URI: http://montereypremier.com/
+
+Description: A Custom Child Theme For Divi
+
+Author: Geno Quiroz
+
+Author URI: http://montereypremier.com/
+
+Template: Divi
+
+Version: Updated for Divi 3
+
+*/
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[grijze google map]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+.et_pb_map_container { 
+
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); 
+
+    filter: grayscale(100%);
+
+    -moz-filter: grayscale(100%);
+
+    -ms-filter: grayscale(100%);
+
+    -o-filter: grayscale(100%);
+
+    filter: gray; /* IE6-9 */
+
+    -webkit-filter: grayscale(100%);
+
+}
+
+
+
+.rounded img
+
+{
+
+    border-radius: 50%;
+
+max-height: 400px;}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[slider]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[beeldhomepage animaties]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+.et_parallax_bg {
+
+	transition: 30s ease-out ;
+
+  animation-iteration-count: infinite;
+
+
+
+}
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[getuigenis]--------------------*/
+
+/*------------------------------------------------*/
+
+.getuigenis .et_pb_slide_image {
+
+	width: 100%!important;
+
+padding: 0px!important;
+
+margin: 0px!important;
+
+}
+
+
+
+.getuigenis img {
+
+	vertical-align: top!important;
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[button animaties]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+.et_pb_button
+
+{  
+
+
+
+ }
+
+
+
+
+
+.et_pb_button:hover 
+
+ {
+
+  animation-name: pulse_animation;
+
+	animation-duration: 4000ms;
+
+	transform-origin:70% 70%;
+
+	animation-iteration-count: infinite;
+
+	animation-timing-function: linear;
+
+}
+
+
+
+
+
+
+
+@keyframes pulse_animation {
+
+	0% { transform: scale(1); }
+
+	30% { transform: scale(1.1); }
+
+	40% { transform: scale(1.); }
+
+	50% { transform: scale(1.1); }
+
+	60% { transform: scale(1); }
+
+	70% { transform: scale(1.05); }
+
+	80% { transform: scale(1); }
+
+	100% { transform: scale(1); }
+
+}
+
+/*------------------------------------------------*/
+
+/*-------------------[button homepage]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+.icon-tools-2:before {
+
+    content: "\e074" ;
+
+font-size: 16px;
+
+font-family: 'ETmodules';
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[navigatie header]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+.nav > li > a:focus, .nav > li > a:hover
+
+{
+
+  text-decoration-color: currentcolor;
+
+  text-decoration-line: none;
+
+  text-decoration-style: solid;
+
+ color: #fff !important;
+
+  background-color: transparent !important;
+
+}
+
+
+
+
+
+#top-menu-nav > ul > li > a:hover, #et-secondary-menu > ul > li > a:hover, #et-info-email:hover, .et-social-icons a:hover
+
+{
+
+  transition-property: none !important;
+
+-webkit-transition: margin-top, 0s ease-in-out !important;
+
+  transition-duration: 0s !important;
+
+  transition-timing-function: 0s ease-in-out !important;
+
+  transition-delay: 0s;
+
+}
+
+
+
+
+
+#logo
+
+{
+
+max-height: 100% !important ;
+
+margin: 0px 0px  0px -70px;
+
+}
+
+
+
+
+
+.nav li ul
+
+{
+
+ 
+
+  width: 240px;
+
+  margin: 0px;
+
+padding:0px;
+
+}
+
+
+
+#top-menu-nav a {
+
+ 
+
+  margin:8px 0;
+
+padding:0 8px;
+
+font-weight: 500;
+
+}
+
+
+
+#top-menu li li a
+
+{
+
+   margin:6px 0;
+
+padding:0 10px;
+
+}
+
+
+
+#top-menu li li 
+
+{
+
+   border-bottom: 1px solid#fff;
+
+}
+
+
+
+.wordlid, .gratisweekpass {
+
+    color: #fff;
+
+    margin: 0px;
+
+padding: 9px 25px 9px 25px;
+
+border: 1px solid #A7C520;
+
+  }
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[tables lesrooster]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+table.lesrooster 
+
+{
+
+font-family: "montserrat", Times, serif; 
+
+font-size: 16px;
+
+border-right: 0px;
+
+border-left: 0px
+
+ }
+
+
+
+
+
+table.lesrooster tfoot th, table.lesrooster thead th
+
+{
+
+  background-color: #fff!important;
+
+  font-weight: 500;
+
+  vertical-align: middle;
+
+color: #000;
+
+}
+
+
+
+table.lesrooster .sorting, .tablepress .sorting_asc, .tablepress .sorting_desc
+
+{
+
+  position: relative;
+
+  padding-right: 100px;
+
+  cursor: pointer;
+
+  outline-width: 0px;
+
+  outline-style: none;
+
+  outline-color: currentcolor;
+
+}
+
+
+
+table.lesrooster .row-hover tr.odd:hover td
+
+{
+
+  background-color: #f9f9f9;
+
+}
+
+
+
+table.lesrooster .row-hover tr.even:hover td
+
+{
+
+  background-color: #fff;
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+
+table.lesrooster 
+
+{
+
+font-size: 15px;
+
+ }
+
+	
+
+table.lesrooster th.column-1, th.column-5, th.column-6 
+
+	 {display: none!important;}
+
+
+
+table.lesrooster td.column-1, td.column-5, td.column-6 
+
+	 {display: none!important;}
+
+
+
+table.lesrooster td.column-2
+
+	 {padding: 6px 8px 8px 6px!important;}
+
+
+
+table.lesrooster th.column-2
+
+	 {padding: 6px 8px 8px 6px!important;}
+
+
+
+table.lesrooster td.column-3
+
+	 {padding: 6px 8px 8px 0px!important;}
+
+
+
+table.lesrooster th.column-3
+
+	 {padding: 6px 8px 8px 0px!important;}
+
+
+
+}
+
+ 
+
+@media only screen and (max-width: 640px) {
+
+	table.lesrooster tr.row-1, 
+
+	 {display: none;}
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[tables openingstijden]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+table.openingstijden td.column-2
+
+ {text-align: left; max-width: 15%;}
+
+
+
+table.openingstijden td.column-3
+
+ { text-align: center; width: 15%;}
+
+
+
+table.openingstijden 
+
+ { border: 0px!important; 
+
+padding: 0px!important;}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[Floating Dot Navigation]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+ul.et_pb_side_nav {
+
+ top: 78%;
+
+ right: 1%;
+
+ width: auto;
+
+ padding: 0px;
+
+ -webkit-border-top-left-radius: 0px;
+
+ -moz-border-radius-topleft: 0px;
+
+ border-top-left-radius: 0px;
+
+ -webkit-border-bottom-left-radius: 0px;
+
+ -moz-border-radius-bottomleft: 0px;
+
+ border-bottom-left-radius: 0px;
+
+ -webkit-border-top-right-radius: 0px;
+
+ -moz-border-radius-topright: 0px;
+
+ border-top-right-radius: 0px;
+
+ -webkit-border-bottom-right-radius: 0px;
+
+ -moz-border-radius-bottomright: 0px;
+
+ border-bottom-right-radius: 0px;
+
+ opacity: 0;
+
+ background: rgba(0,0,0,0);
+
+}
+
+
+
+ul.et_pb_side_nav li.side_nav_item {
+
+ padding: 1px;
+
+}
+
+
+
+ul.et_pb_side_nav .side_nav_item a {
+
+ width: 25px;
+
+ height: 25px;
+
+ margin-right: 0px;
+
+ -webkit-border-radius: 0px;
+
+ -moz-border-radius: 0px;
+
+ border-radius: 0px;
+
+ background-color: #2a240a;
+
+}
+
+
+
+ul.et_pb_side_nav.et-visible {
+
+ opacity: 1;
+
+ -webkit-animation: fadeIn 1.5s 1 cubic-bezier(0.77, 0, 0.175, 1);
+
+ -moz-animation: fadeIn 1.5s 1 cubic-bezier(0.77, 0, 0.175, 1);
+
+ -o-animation: fadeIn 1.5s 1 cubic-bezier(0.77, 0, 0.175, 1);
+
+ animation: fadeIn 1.5s 1 cubic-bezier(0.77, 0, 0.175, 1);
+
+}
+
+
+
+ul.et_pb_side_nav .side_nav_item a.active,
+
+ul.et_pb_side_nav .side_nav_item a:hover {
+
+ background-color: #A7C520!important;
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[slider arrows]--------------------*/
+
+/*------------------------------------------------*/
+
+.et-pb-arrow-prev, .et-pb-arrow-next
+
+{
+
+  position: absolute;
+
+  z-index: 100;
+
+  top: 45%;
+
+  margin-top: -24px;
+
+  opacity: 0;
+
+  color: #000 !important;
+
+background-color: #eaeaea;
+
+border-radius: 50%;
+
+  font-size: 38px;
+
+font-weight: bold;
+
+  transition-property: all;
+
+  transition-duration: 0.2s;
+
+  transition-timing-function: ease-in-out;
+
+  transition-delay: 0.2s;
+
+}
+
+
+
+
+
+
+
+.et-pb-controllers
+
+{
+
+  position: absolute;
+
+  z-index: 10;
+
+  bottom: 20%;
+
+  left: 0px;
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[NAVIGATIE KINE]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+ul.menu 
+
+{ width: 900px !important;}
+
+
+
+@media only screen and (max-width: 600px) {
+
+	
+
+ul.menu 
+
+{
+
+width: 400px !important;
+
+}
+
+}
+
+
+
+.img-responsive0 {
+
+float: none;
+
+width: 100%;
+
+
+
+}
+
+
+
+
+
+.menu li
+
+{ width: 70%!important; display: inline; font-family: "Montserrat", sans-serif; font-size: 16px; margin: 0px 0px 100px 0px!important;line-height: 50px;}
+
+
+
+.menu li a
+
+{color: #000!important;}
+
+
+
+
+
+
+
+.menu li a:link
+
+{text-transform: uppercase; color: #000!important; border: 1px solid#000; padding: 10px; }
+
+
+
+
+
+.menu li a:hover 
+
+ {
+
+color: #fff!important;
+
+background-color: #000!important;
+
+  animation-name: pulse_animation;
+
+	animation-duration: 4000ms;
+
+	transform-origin:70% 70%;
+
+	animation-iteration-count: infinite;
+
+	animation-timing-function: linear;
+
+}
+
+
+
+@keyframes pulse_animation {
+
+	0% { transform: scale(1); }
+
+	30% { transform: scale(1.1); }
+
+	40% { transform: scale(1.); }
+
+	50% { transform: scale(1.1); }
+
+	60% { transform: scale(1); }
+
+	70% { transform: scale(1.05); }
+
+	80% { transform: scale(1); }
+
+	100% { transform: scale(1); }
+
+}
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[GENERAL]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+#main-header .et_mobile_menu .menu-item-has-children > a { background-color: transparent; position: relative; }
+
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-family: 'ETmodules'; text-align: center; speak: none; font-weight:bold; font-variant: normal; text-transform: none; -webkit-font-smoothing: antialiased; position: absolute; }
+
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-size: 16px; content: '\4c'; top: 13px; right: 10px; }
+
+#main-header .et_mobile_menu .menu-item-has-children.visible > a:after { content: '\4d'; }
+
+#main-header .et_mobile_menu ul.sub-menu { display: none !important; visibility: hidden !important;  transition: all 1.5s ease-in-out;}
+
+#main-header .et_mobile_menu .visible > ul.sub-menu { display: block !important; visibility: visible !important; }
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[POP-UP]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+.pum-theme-1060 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close
+
+{
+
+    color: #fff;
+
+background-color:#A7C520!important;
+
+  }
+
+
+
+/*------------------------------------------------*/
+
+/*-----------------[HEADER-MENU]------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*------------------[HOMEPAGE]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*------------------[SUBPAGES]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[Footer]---------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------*/
+
+/*--------------------[NIEUWS]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+.et_pb_image_container img, .et_pb_post a img
+
+{
+
+  border: solid 1px #000 ;
+
+ border-bottom: solid 0px #000 ;
+
+  vertical-align: bottom;
+
+}
+
+
+
+.wp-pagenavi
+
+{
+
+  clear: both;
+
+  margin-bottom: 20px;
+
+  padding-top: 5px;
+
+  border-top-width: 0px;
+
+  border-top-style: solid;
+
+  border-top-color: #e2e2e2;
+
+  text-align: left;
+
+}
+
+
+
+.wp-pagenavi a, .wp-pagenavi span
+
+{
+
+  
+
+padding: 5px 12px;
+
+border: 1px solid#000!important;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-decoration-color: currentcolor;
+
+  text-decoration-line: none;
+
+  text-decoration-style: solid;
+
+  color: #000!important;
+
+margin: 3px;
+
+
+
+}
+
+
+
+.wp-pagenavi span.current, .wp-pagenavi a:hover
+
+{
+
+  color: #fff!important;
+
+border: 1px solid#000!important;
+
+background-color: #000!important;
+
+font-weight: bold;
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*--------------------[NIEUWS via app]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+.label-info
+
+{
+
+  display: none!important;
+
+
+
+}
+
+
+
+.blog-item {
+
+border: 1px solid#000!important;
+
+padding: 0px;
+
+margin: 0px 20px 20px 0;
+
+display: inline-block;
+
+vertical-align: top;
+
+width: 100%;
+
+}
+
+
+
+
+
+.img-responsive0 {
+
+padding: 0!important;
+
+float: left;
+
+display: inline-block;
+
+width: 47%;
+
+margin: 0px 10px 0px 0px;
+
+}
+
+
+
+
+
+h2.blg-title
+
+{
+
+text-transform: uppercase!important;
+
+font-size: 24px;
+
+margin: 5px 0px 0px 0px;
+
+padding: 0px 5px 0px 0px!important;
+
+}
+
+
+
+.blog-item-content
+
+{
+
+padding: 15px 15px 25px 0px!important;
+
+margin: 0!important;
+
+width: 50%;
+
+float: right;
+
+}
+
+
+
+.mr10 {
+
+font-weight: bold;
+
+margin: 0px 5px 0px 0px;
+
+}
+
+
+
+.fa-calendar
+
+{
+
+margin: 0px 5px 0px 0px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+	
+
+.blog-item-content
+
+{
+
+width: 100%;
+
+float: none;
+
+padding: 15px 15px 25px 30px!important;
+
+margin: 0!important;
+
+}
+
+
+
+.img-responsive0 {
+
+float: none;
+
+width: 100%;
+
+
+
+}
+
+
+
+}
+
+
+
+.nieuwspaginas{
+
+margin: 0px 2px 20px 0px!important;
+
+}
+
+
+
+.nieuwspaginas a:link {
+
+padding: 10px 15px!important;
+
+margin: 0px 2px 0px 0px!important;
+
+border: 1px solid#000;
+
+color: #000;
+
+background-color: #fff!important;
+
+}
+
+
+
+.nieuwspaginas a:visited {
+
+color: #000;
+
+background-color: #fff!important;
+
+}
+
+
+
+
+
+.nieuwspaginas a:hover {
+
+color: #fff;
+
+background-color: #000!important;
+
+}
+
+
+
+.nieuwspaginas a:focus {
+
+color: #fff;
+
+background-color: #000!important;
+
+}
+
+
+
+.nieuwspaginas a:active {
+
+color: #fff;
+
+background-color: #000!important;
+
+}
+
+
+
+.nieuwspaginas a.active {
+
+color: #fff;
+
+background-color: #000!important;
+
+}
+
+
+
+/*------------------------------------------------*/
+
+/*-------------------[tables lesroosterapp]--------------------*/
+
+/*------------------------------------------------*/
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+button.accordion {
+
+    font-family: "montserrat", Times, serif; 
+
+font-size: 20px;
+
+background-color: #eee;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    width: 100%;
+
+    text-align: left;
+
+    border: none;
+
+    outline: none;
+
+text-transform: uppercase;
+
+margin: 10px 0px 10px 0px;
+
+}
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.table-striped{
+
+    padding: 0px!important;
+
+    background-color: white;
+
+border: 0px!important;
+
+font-family: "montserrat", Times, serif; 
+
+border-right: 0px;
+
+border-left: 0px;
+
+text-align: left;
+
+}
+
+
+
+.table-striped td {
+
+    width: 25%;
+
+padding: 0px 5px 0px 0px!important;
+
+    background-color: white;
+
+border: 0px!important;
+
+font-family: "montserrat", Times, serif; 
+
+border-right: 0px;
+
+border-left: 0px;
+
+text-align: left;
+
+vertical-align: top;
+
+}
+
+
+
+
+
+.table-striped td.tijd {
+
+    padding: 0px 10px 4px 10px!important;
+
+}
+
+.table-striped td.les {
+
+    text-decoration: underline;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+.table-striped  {
+
+font-family: "montserrat", Times, serif; 
+
+border: 0px!important;
+
+}
+
+
+
+.table-striped td {
+
+width: 38%;
+
+font-family: "montserrat", Times, serif; 
+
+line-height: 180%;
+
+
+
+}
+
+
+
+.table-striped td.zaal, td.lesgever 
+
+	 {display: none!important;}
+
+
+
+}
+
+/*------------------------------------------------*/
+
+
+
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+/*--[ADD TUTORIAL CUSTOMIZATION BELOW THIS LINE]--*/
+
+
+
+
+
+/*--------------------FORMS-----------------------*/
+
+
+
+input[type="text"], input[type="tel"], input[type="email"]
+
+{
+
+  border-top-color: #000;
+
+  border-right-color: #000;
+
+  border-bottom-color: #000;
+
+  border-left-color: #000;
+
+  color: #333;
+
+width: 100%;
+
+font-size: 14px;
+
+font-weight: normal;
+
+padding: 5px 0 5px 10px;
+
+}
+
+
+
+textarea
+
+
+
+{
+
+  border-top-color: #000;
+
+  border-right-color: #000;
+
+  border-bottom-color: #000;
+
+  border-left-color: #000;
+
+  color: #333;
+
+width: 100%;
+
+font: inherit;
+
+font-weight: normal!important;
+
+padding: 5px 0 5px 10px;
+
+}
+
+
+
+select
+
+
+
+{
+
+  border-top-color: #000;
+
+  border-right-color: #000;
+
+  border-bottom-color: #000;
+
+  border-left-color: #000;
+
+  color: #333;
+
+width: 100%;
+
+font: inherit;
+
+font-weight: normal!important;
+
+padding: 5px 0 5px 10px;
+
+margin: 0;
+
+}
+
+
+
+
+
+.wpcf7 input[type="submit"] {
+
+background: #fff;
+
+border: 1px solid #000;
+
+color: #000;
+
+cursor: pointer;
+
+font-family: montserrat;
+
+font-size: 16px;
+
+font-weight: normal;
+
+	padding: 5px 12px 5px 12px;
+
+
+
+text-transform: uppercase;
+
+
+
+}
+
+ 
+
+
+
+.wpcf7 input:hover[type="submit"]
+
+{
+
+background: #000;
+
+color: #fff;
+
+}
+
+
+
+span.wpcf7-not-valid-tip
+
+{
+
+  color: #87a600;
+
+  font-size: 1em;
+
+  font-weight: normal;
+
+  display: block;
+
+}
+
+
+
+
+
+div.wpcf7-response-output
+
+{
+
+  margin-top: 2em;
+
+  margin-right: 0.5em;
+
+  margin-bottom: 1em;
+
+  margin-left: 0;
+
+  padding-top: 0.5em;
+
+  padding-right: 1em;
+
+  padding-bottom: 0.7em;
+
+  padding-left: 1em;
+
+width: 100%;
+
+border: 1px solid#87a600;
+
+}
+
+
+
+div.wpcf7-validation-errors
+
+{
+
+border: 1px solid#87a600;
+
+
+
+}
+
+
+
+
+
+.wpcf7-select {
+
+border: 1px solid#000;
+
+width: 100%;
+
+border-radius: 0px!important;
+
+}
+
+
+
+.wpcf7-form p
+
+{
+
+font-weight: normal!important;
+
+ color: #000;
+
+margin: 0px 0px 0px 0px;
+
+}
+
+
+
+.form-nieuwsbrief p
+
+{
+
+  margin: 2px 0px 0px 0px!important;
+
+font-size: 16px;
+
+
+
+}
+
+
+
+.form-nieuwsbrief input[type="text"]
+
+{
+
+font-size: 12px;
+
+
+
+}
+
+
+
+.form-nieuwsbrief  input[type="email"]
+
+
+
+{
+
+font-size: 12px;
+
+}
+
+
+
+.wpcf7-form p
+
+{
+
+font-weight: normal!important;
+
+ color: #000;
+
+margin: -5px 0px 0px 0px;
+
+}
+
+
+
+
+
+/*------------------------------------------------*/
+
+rounded images
+
+/*------------------------------------------------*/
+
+
+
+.rounded img
+
+{
+
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+.wpcf7-form label
+
+{
+
+  display: inline-block;
+
+  width: 100%;
+
+  margin-bottom: 5px;
+
+  font-weight: 600!important;
+
+
+
+}
+
+.header-image {
+
+    display: block;
+
+    height: 340px;
+
+    background-size: cover !important;
+
+    margin: 22px 0;
+
+}
+
+
+
+
+
+table.openingstijden {
+
+border: 0px;}
+
+
+
+table.openingstijden td {
+
+margin: 0px;
+
+padding: 0px; border: 0px;}
+
+
+
+table.openingstijden tr {
+
+margin: 0px;
+
+padding: 0px;}
+
+
+
+.et_pb_slide_description 
+
+{
+
+    margin-top: -100px;
+
+}
+
+
+
+/*
+
+.et_fullscreen_slider .et_pb_slides,
+
+.et_fullscreen_slider .et_pb_slide,
+
+.et_fullscreen_slider .et_pb_container {
+
+    height: 100vh !important;
+
+}
+
+*/
+
+.et_fullscreen_slider .et_pb_slides,
+
+.et_fullscreen_slider .et_pb_slide,
+
+.et_fullscreen_slider .et_pb_container {
+
+    height: 100vh !important;
+
+background-position:center;
+
+	transition: all 1s ease;
+
+  -moz-transition: all 1s ease;
+
+  -ms-transition: all 1s ease;
+
+  -webkit-transition: all 1s ease;
+
+  -o-transition: all 1s ease;
+
+ }
+
+
+
+#post-102 .main_title {display: none;}
+
+
+
+#post-98 .main_title {display: none;}
+
+
+
+#post-141 .main_title {display: none;}
+
+
+
+#post-135 .main_title {display: none;}
+
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+
+    #logo
+
+{
+
+ max-height: 100% !important ;
+
+margin: 0px 0px  0px -120px;
+
+padding:0;
+
+}
+
+
+
+.et_header_style_left #logo, .et_header_style_split #logo
+
+{
+
+  max-width: 105%;
+
+padding:0;
+
+
+
+}
+
+}
+
+
+
+@media (max-width: 980px) {
+
+ .container.et_menu_container { 
+
+ width: calc( 100% - 60px);
+
+height:50px; }
+
+}
+
+
+
+.et_mobile_menu {
+
+ margin-top: -15px;
+
+ margin-left: -30px;
+
+font-weight: 500;
+
+
+
+ padding: 5%;
+
+ width: calc( 100% + 60px);
+
+}
+
+
+
+.mobile_nav.opened .mobile_menu_bar:before {
+
+ content: "\4d";
+
+}
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+
+#main-header {
+
+position: fixed !important;
+
+height:50px;
+
+}
+
+}
+
+
+
+
+
+.mobile_menu_bar
+
+{
+
+  display: block;
+
+  position: relative;
+
+  line-height: 0;
+
+ margin-top: -15px;
+
+margin-left: 50px;
+
+}
+
